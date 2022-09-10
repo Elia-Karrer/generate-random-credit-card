@@ -67,7 +67,7 @@ char* new_card(void)
     // Checksum = sum of sums and counts
     checksum = sum_1*2 + sum_2 + count_4;
     
-    // Shorten checksum to to the number, missing to next multiple of 10
+    // Shorten checksum to the digit, missing to next multiple of 10
     checksum = (checksum % 10) ? 10 - (checksum % 10) : 0;
     
     // Store checksum in string
